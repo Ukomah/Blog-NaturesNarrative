@@ -1,0 +1,45 @@
+<div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr"> 
+        <div class="quform-elements">
+                                          
+            <!-- <h3 class="greennature-heading-shortcode " style="font-weight: bold;">ADD A NEW COMMENT<hr></h3> -->
+            <h2 class="greennature-widget-title">Add a new comment<hr></h2>
+
+            <form action="{% url 'blog:post_comment' post.id %}" method="post">
+                    {% csrf_token %}
+                                                    
+                                                    <div class="quform-element">
+                                                        <p>
+                                                            <span class="wpcf7-form-control-wrap your-name">
+                                                                Name: {{ form.name }} <!-- Adjusted to use Django form field -->
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="quform-element">
+                                                        <p>
+                                                            <span class="wpcf7-form-control-wrap your-email">
+                                                                Email: {{ form.email }} <!-- Adjusted to use Django form field -->
+                                                            </span>
+                                                            
+                                                        </p>
+                                                    </div>
+                                                  
+                                                    <div class="quform-element">
+                                                        <p>
+                                                            <span class="wpcf7-form-control-wrap your-message">
+                                                                Comment: {{ form.body }} <!-- Adjusted to use Django form field -->
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="quform-submit">
+                                                        <div class="quform-submit-inner">
+                                                            <button type="submit" class="submit-button" value="Add comment"><span>Add Comment</span></button>
+                                                        </div>
+                                                        <!-- <div class="quform-loading-wrap"><span class="quform-loading"></span></div> -->
+                                                    </div>
+            </form>
+
+                                           
+    </div>
+</div>
+ 
+                                    

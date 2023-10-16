@@ -1,0 +1,1349 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-09-19T11:05:33.769Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-09-19T11:27:18.094Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-09-19T11:29:01.931Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "To the things that makes us greater",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-09-19T15:45:36.670Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-09-20T12:23:49.228Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "To the things that makes us greater",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-09-20T12:24:01.978Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "To the things that makes us greater",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-09-20T12:25:33.179Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-09-20T12:27:08.419Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Light the shine out",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-09-20T12:28:57.906Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Let the light shine out",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\", \"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-09-20T12:53:07.729Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Let the light shine out",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-09-20T13:05:39.355Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-09-20T13:05:46.953Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "To the things that makes us greater",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-09-20T13:06:34.193Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Let the light shine out",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-09-20T13:06:58.886Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-09-20T13:07:05.576Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Let the light shine out",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-09-20T13:07:27.208Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "To the things that makes us greater",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-09-20T16:43:22.082Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Let the light shine out",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-09-20T17:36:54.733Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-09-20T17:38:15.868Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Rising Sun",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-09-20T17:40:16.787Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Unbeatable Living",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-09-22T06:49:24.470Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "My Strenght",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-09-22T06:51:46.001Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Great God",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-09-22T07:20:12.716Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Able God",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-09-22T08:50:31.188Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Able God",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-09-22T08:51:34.120Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Able God",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-09-22T09:07:34.665Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Our Hope",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-09-22T09:09:23.555Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Help",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-09-25T20:45:56.035Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "comment by Henry on Let the light shine out",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-09-25T20:47:21.270Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "comment by Trial on Let the light shine out",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-09-26T03:49:09.599Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "ANIMAL",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-09-26T03:50:24.025Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "ANIMAL",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"tagged item\", \"object\": \"The future we make tagged with ANIMAL\"}}, {\"added\": {\"name\": \"tagged item\", \"object\": \"Rising Sun tagged with ANIMAL\"}}, {\"added\": {\"name\": \"tagged item\", \"object\": \"My Strenght tagged with ANIMAL\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-09-26T03:50:47.783Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Django",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tagged item\", \"object\": \"To the things that makes us greater tagged with Django\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-09-27T17:40:34.143Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-09-27T17:41:19.649Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-09-27T17:48:21.019Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-09-27T17:48:42.083Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-09-27T17:49:54.765Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-09-27T17:53:59.057Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-09-27T17:57:27.341Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-09-27T17:57:57.658Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "The future we make",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2023-09-30T06:44:18.846Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "localhost:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 11,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 11,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 11,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 11,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$VjezYhDJeiq1qWIXUF9HFM$Y8k79NLRahLSP/hmFuW8hBWftdmqQDiTeerSm8vfB7I=",
+    "last_login": "2023-09-19T10:47:28.402Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-09-19T10:46:10.943Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lb7c8wni13kj7zn83ajf7ka4sqd4ua0r",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHA8Cgu3fsNZIBBqoYmpV0Z_11JutDtOefeFwu4bzXsndYwZ3Zmkp1-WcT0oDZEvmO7LTwtbVvnyEfCD9v5dcn0vBzt30HFXr_rNIFFEsqZDF47FY2ikmCyHjCWAbA4MsVbg1pCAS9c1glBSypKWPb-ANxoN6k:1qiYGO:FgIoaXTLoUfgLxcdLQU_AkJ4GPwUUHTE722sjGZgY14",
+    "expire_date": "2023-10-03T10:47:28.408Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "The future we make",
+    "slug": "the-future-we-make",
+    "author": 1,
+    "body": "The future is not a distant land waiting for us to arrive; it is a canvas, blank and full of possibility, on which we paint every day with our actions, choices, and dreams. It is shaped not just by the seismic events that shake the world, but by the tiny ripples we create through our daily endeavors. Each kind word spoken, every innovation pursued, and all challenges embraced contribute to this intricate mosaic of tomorrow. The brushes may sometimes feel heavy, weighed down by the pressures of the present, but the artistry lies in our persistence to keep painting, to keep envisioning a brighter, bolder, and better future.\r\n\r\nThere's a poetic beauty in realizing that every individual has the power to influence the course of the future. It's a collective symphony of hopes and aspirations, where each note, no matter how faint, contributes to the grand melody of what's to come. Every act of kindness, every pursuit of knowledge, and every endeavor to uplift others writes a line in the story of our shared future. It's a reminder that the power to craft the days ahead lies within our hands. So, let's embrace our roles as the artists, authors, and architects of the world to come. Because the future, with all its uncertainty and potential, is truly the one we make. https://taplio.com/linkedin-post-formatter - <a href=\"https://www.djangoproject.com/\" target=\"_blank\">link to the Django website</a>",
+    "published": "2023-09-19T10:49:27Z",
+    "created": "2023-09-19T11:05:33.756Z",
+    "updated": "2023-09-27T17:57:57.646Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "To the things that makes us greater",
+    "slug": "to-the-things-that-makes-us-greater",
+    "author": 1,
+    "body": "In the tapestry of life, it is often the challenges, the adversities, and the unexpected twists that carve out the true essence of our character. These moments, whether they come in the form of failures, rejections, or plain uncertainty, are not mere obstacles; they are the crucibles in which our strength is tested and our spirit is forged. Like a blacksmith shaping iron into a fine blade, life's difficulties mold and shape us, helping us discover a resilience we never knew we possessed, a tenacity that becomes the bedrock of our very existence.\r\n\r\nYet, beyond these challenges lie the passions that ignite our souls, the dreams that propel us forward, and the people who stand by our side, cheering us on. They are the light that pierces through the densest of storms, guiding us towards brighter horizons. Whether it's a book that inspires us, a mentor who believes in us, or simply a sunset that reminds us of the beauty in the world, these are the things that amplify our greatness. They serve as reminders that even in the midst of life's tumultuous waves, there exists within each of us an undying flame, ready to light up the world. So, here's to the things that make us greater – may we always recognize them, cherish them, and let them guide our path forward.",
+    "published": "2023-09-19T11:27:29Z",
+    "created": "2023-09-19T11:29:01.928Z",
+    "updated": "2023-09-20T13:07:27.197Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "Let the light shine out",
+    "slug": "let-the-light-shine-out",
+    "author": 1,
+    "body": "Throughout the vast cosmos, amid galaxies and nebulae, it is light that bridges the chasm of the unknown, piercing through the veil of darkness, revealing the wonders that lie beyond. Similarly, within the depths of our own souls, exists a luminance waiting to break free, to illuminate not only our path but to also light up the journey for those around us. This light—comprising our hopes, dreams, kindness, and resilience—remains undeterred by the shadows of doubt or the storms of adversity. To let it shine out is to embrace our true essence, to let our authentic self radiate and touch the world in myriad, beautiful ways.\r\n\r\nYet, there are moments when the fog of fear, insecurity, or past failures cloud our brilliance. In such times, it becomes imperative to remember that light finds its true purpose in the dark. Every challenge we face, every heartbreak we endure, and every obstacle we overcome adds a unique luster to our glow, refining it, making it more profound. When we decide to let our light shine out, irrespective of the external conditions, we send a powerful message to the world—that brightness emerges not from the absence of darkness, but from the determination to shine through it. It's an invitation for others to do the same, creating a cascade of illumination, banishing shadows one beam at a time.",
+    "published": "2023-09-19T15:21:54Z",
+    "created": "2023-09-19T15:22:00.204Z",
+    "updated": "2023-09-20T16:43:22.076Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "Rising Sun",
+    "slug": "rising-sun",
+    "author": 1,
+    "body": "The rising sun, a symbol of new beginnings, hope, and renewal, has been a source of inspiration for poets, artists, and dreamers throughout history. Its first light paints the sky in a palette of oranges, purples, and pinks, casting away the darkness of night and welcoming a brand-new day. For countless generations, the sight of the sun climbing over the horizon has been a daily reminder that after the darkest night, there's always a dawn waiting to bring warmth and light.\r\n\r\nIn various cultures, the rising sun carries profound meanings. For some, it represents the cyclical nature of life, illustrating the idea that endings pave the way for fresh starts. It’s a symbol of resilience and perseverance, showing us that no matter how challenging the night, the day offers a new chance to shine. Ancient civilizations worshipped the sun as a deity, attributing to it the power to heal, to renew, and to sustain life. Its consistency in rising every day made it a figure of reliability and unyielding power.\r\n\r\nBeyond its cultural and symbolic meanings, the rising sun plays a crucial role in our planet's ecosystem. It signals the start of the diurnal cycle, waking creatures for their daily routines and setting the rhythm for nature. Plants reach out to bask in its light, absorbing the energy required for photosynthesis. Meanwhile, humans too have attuned their lives to its rhythm, with the dawn marking the beginning of daily toils, dreams, and possibilities. In the grand tapestry of life, the rising sun is a thread of hope, weaving tales of aspirations, rebirths, and the everlasting dance of darkness and light.",
+    "published": "2023-09-20T17:36:54Z",
+    "created": "2023-09-20T17:38:15.866Z",
+    "updated": "2023-09-20T17:38:15.866Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "Unbeatable Living",
+    "slug": "unbeatable-living",
+    "author": 1,
+    "body": "Unbeatable living is more than just existing; it's thriving in every aspect of life. It's about cultivating an attitude of resilience, positivity, and adaptability no matter what challenges life throws at you. Such a lifestyle doesn't imply the absence of difficulties or moments of despair. Instead, it's about approaching every situation with an unyielding spirit and unwavering determination, always ready to rise above the obstacles and embrace the journey of life wholeheartedly.\r\n\r\nAt its core, unbeatable living is deeply personal. It stems from an inner strength and an intrinsic belief in one's capabilities. It's about setting boundaries, prioritizing self-care, and understanding that setbacks are merely stepping stones to greater achievements. People leading an unbeatable life recognize that while they cannot control every external event, they certainly can control their reactions to them. They focus on cultivating a growth mindset, continually learning, evolving, and pushing their limits.\r\n\r\nMoreover, unbeatable living extends beyond personal growth and well-being. It's about fostering strong relationships, building communities, and contributing positively to the world. Those who lead such lives often inspire others to challenge their own limits and reach new heights. They understand that true fulfillment doesn't come from solitary success but from elevating others alongside them. In a world rife with uncertainties, those practicing unbeatable living shine as beacons of hope, reminding us that with the right mindset and spirit, we can indeed create a life that's not just about surviving but truly thriving.",
+    "published": "2023-09-20T17:38:31Z",
+    "created": "2023-09-20T17:40:16.782Z",
+    "updated": "2023-09-20T17:40:16.782Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "My Strenght",
+    "slug": "my-strenght",
+    "author": 1,
+    "body": "Everyone has their own unique set of strengths that they bring to the table, and discovering them can be a journey of self-exploration and reflection. For me, my strength lies in my resilience. Life, with its myriad twists and turns, has taught me the value of remaining steadfast in the face of adversity. Whether it be personal challenges, professional setbacks, or unexpected life events, my ability to rebound and recover has been my guiding light, enabling me to navigate through stormy weathers with hope and determination. This resilience is not a shield against hardships but a driving force that fuels my perseverance and motivates me to overcome obstacles, learning and growing with every experience.\r\n\r\nAnother strength of mine is my deep sense of empathy. This ability to understand and share the feelings of others has allowed me to connect with people on a profound level, building meaningful relationships and fostering a supportive and inclusive environment. Empathy fuels my desire to help others, encouraging me to reach out, offer support, and make a positive impact wherever possible. This strength has not only enriched my personal relationships but has also played a crucial role in my professional life, enhancing my ability to communicate effectively, collaborate with diverse teams, and contribute to a harmonious and productive work environment.\r\n\r\nLastly, my commitment to continuous learning is a strength that I value immensely. The pursuit of knowledge and the desire to improve and develop my skills have always been intrinsic parts of my character. This commitment to learning allows me to adapt to new situations and embrace new challenges with an open and eager mind. Whether acquiring new skills, exploring unfamiliar subjects, or seeking to understand the ever-evolving world around me, my passion for learning ensures that I am always growing, evolving, and striving to reach my fullest potential. In every aspect of my life, this strength has been a beacon, guiding me towards new horizons and enabling me to contribute more effectively to the world around me.",
+    "published": "2023-09-22T06:45:54Z",
+    "created": "2023-09-22T06:49:24.463Z",
+    "updated": "2023-09-22T06:49:24.463Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "Great God",
+    "slug": "great-god",
+    "author": 1,
+    "body": "The notion of a Great God has been central to various belief systems, shaping the ethos of numerous societies and serving as the anchor for myriad cultures and religions around the world. The conceptualization of a Supreme Being that governs the universe, the embodiment of wisdom, compassion, and strength, is a common thread weaving through the rich tapestry of human history and thought. This entity, whatever name it might be assigned—God, Yahweh, Allah, Brahman, and many others—represents the pinnacle of divine power and moral virtue, symbolizing the boundless love and infinite wisdom that govern the cosmos.\r\n\r\nThe Great God is often seen as the creator and sustainer of the universe, the architect of the laws of nature and the moral order. In numerous traditions, God is regarded as omnipotent, omnipresent, and omniscient, able to craft worlds with a mere thought, to be everywhere at every moment, and to know all that is knowable. Devotees turn to this Supreme Entity seeking guidance, solace, and strength, invoking its benevolence to navigate through life's tribulations and uncertainties. People find solace in their belief, relying on divine providence to glean hope and strength amidst suffering and chaos, seeking to align their lives with the celestial blueprint etched by the divine hand.\r\n\r\nThe belief in a Great God also fosters a communal spirit, a shared reverence that binds people together, allowing them to transcend their trivial differences and unite under the sacred canopy of shared faith. This communal bond reinforces moral values, ethical principles, and social harmony, cultivating a sense of responsibility and altruism among followers. Through various acts of worship, rituals, and moral obligations, believers attempt to foster a profound connection with the Divine, aspiring to emulate the celestial virtues and seeking to infuse their lives with divine grace and wisdom. This pursuit of spiritual enlightenment and moral rectitude, guided by the teachings and values enshrined in various sacred texts and religious doctrines, strives to elevate the human spirit, bringing it closer to the sublime essence of the Great God.",
+    "published": "2023-09-22T06:51:25Z",
+    "created": "2023-09-22T06:51:45.994Z",
+    "updated": "2023-09-22T06:51:45.994Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Able God",
+    "slug": "able-god",
+    "author": 1,
+    "body": "\"Able God\" can be interpreted as a representation of a deity that is capable, competent, and possesses the power to facilitate change, create, and sustain.\r\nThis notion can be significant to people who believe in a higher power that has infinite abilities and the capacity to bring forth goodness, mercy, and grace. \r\n\r\nIn many cultures and religions, the belief in an able God provides hope and solace to people in times of despair and uncertainty. It’s a refuge for those seeking solace and strength, grounding them in the belief that there exists a supreme entity that is in control of the universe, omnipotent, omnipresent, and omniscient. The term conveys not just the capability but also the willingness of the deity to intervene and act in the lives of individuals, shaping destinies and transforming lives.\r\n\r\nBelieving in an \"Able God\" means to have faith in the supreme power's capability to bring peace in times of turmoil, to give strength in times of weakness, and to impart wisdom in times of confusion. This belief often empowers individuals to transcend their limitations, face their fears, and overcome their challenges, fostering a sense of resilience, contentment, and inner peace. It’s a concept that enriches the spiritual life of believers, guiding them through their moral and ethical journeys, and providing them with a foundation of hope and trust in the divine.",
+    "published": "2023-09-22T07:19:46Z",
+    "created": "2023-09-22T07:20:12.710Z",
+    "updated": "2023-09-22T08:51:34.115Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "Our Hope",
+    "slug": "our-hope",
+    "author": 1,
+    "body": "Our hope is a potent force, a fundamental element within our psyche that fuels our perseverance and resilience. It's the light that pierces through the dark clouds of despair, illuminating pathways that were once shrouded in shadow. Our hope is not just a transient emotion or a fleeting feeling but a foundational pillar upon which we build our dreams and aspirations. It's a beacon that guides us through the turbulent seas of life, bringing forth a sense of purpose and direction.\r\n\r\nHope is the catalyst that propels us forward, enabling us to surmount the myriad obstacles and challenges that life inevitably throws our way. It's the whisper in our ear telling us to keep going when the road gets rough, the silent motivator that encourages us to strive, to achieve, and to overcome. Without hope, the human spirit withers and dims, but with it, it burns brightly, a flame undaunted by the winds of adversity. Our hope is our anchor, grounding us when the storms rage, providing stability and assurance amidst the chaos and uncertainty of existence.\r\n\r\nOur hope does not stand alone; it is intertwined with our faith and our love, forming the triumvirate of virtues that define our humanity. It is in hope that we find the strength to believe, to love, and to endure. Hope is not a passive state; it's an active engagement with our dreams and desires. It's a call to action, a summons to rise above our circumstances and to reach for the stars. Our hope is the melody of our soul, a symphony of aspirations that resonate with the harmonies of possibility and potential. In every heartbeat, in every breath, our hope lives, dances, and sings, reminding us of who we are and what we can become.",
+    "published": "2023-09-22T09:07:04Z",
+    "created": "2023-09-22T09:07:34.663Z",
+    "updated": "2023-09-22T09:07:34.664Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "Help",
+    "slug": "help",
+    "author": 1,
+    "body": "Help is a small word with significant meaning, and it can manifest in many different forms. It is the act of aiding, assisting, and making things easier or more bearable for others. It’s a universal principle that’s intrinsic to our humanity, binding us together in times of need. Providing help isn’t merely a transactional experience; it’s a profound interaction that has the potential to create deep and lasting impacts on both the giver and the receiver.\r\n\r\nHelp can be as simple as offering a hand to someone carrying heavy loads or as complex as providing emotional support to someone going through a tough time. It doesn’t always have to be grand or dramatic; sometimes, the most helpful acts are subtle and understated, such as a kind word or a listening ear. These small gestures can illuminate the darkest moments, acting as a beacon of hope and compassion, reminding us of our shared humanity and the universal connection we all have. The beauty of help is that it creates a ripple effect—when we help others, we encourage them to do the same, fostering a culture of kindness and generosity.\r\n\r\nHowever, offering help is not just about altruism; it’s a symbiotic relationship where both parties can grow and learn. When we extend our hand to help others, we’re not just solving a problem or easing a burden; we’re learning empathy, understanding, and resilience. We are reminding ourselves of our shared vulnerabilities and the power of collaboration and unity. Helping is not a one-way street; it’s a mutual journey where every act of kindness and every extended hand can bring us closer to one another, breaking barriers and building bridges. In a world that can sometimes seem divided and fragmented, the act of helping is a powerful tool to create harmony and bring people together, fostering a sense of community and shared responsibility.",
+    "published": "2023-09-22T09:09:04Z",
+    "created": "2023-09-22T09:09:23.550Z",
+    "updated": "2023-09-22T09:09:23.550Z",
+    "status": "PD"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 1,
+    "name": "Henry",
+    "email": "henryukomah@gmail.com",
+    "body": "Nice!",
+    "created": "2023-09-23T13:13:18.381Z",
+    "updated": "2023-09-23T13:13:18.381Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 4,
+    "name": "Henry",
+    "email": "henryukomah@gmail.com",
+    "body": "Meanwhile, humans too have attuned their lives to its rhythm, with the dawn marking the beginning of daily toils, dreams, and possibilities. In the grand tapestry of life, the rising sun is a thread of hope, weaving tales of aspirations, rebirths, and the everlasting dance of darkness and light.",
+    "created": "2023-09-23T13:14:13.129Z",
+    "updated": "2023-09-23T13:14:13.129Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 4,
+    "name": "Trial",
+    "email": "ukomah.henry@abiastateuniversity.edu.ng",
+    "body": "In various cultures, the rising sun carries profound meanings. For some, it represents the cyclical nature of life, illustrating the idea that endings pave the way for fresh starts. It’s a symbol of resilience and perseverance, showing us that no matter how challenging the night, the day offers a new chance to shine. Ancient civilizations worshipped the sun as a deity, attributing to it the power to heal, to renew, and to sustain life. Its consistency in rising every day made it a figure of reliability and unyielding power.",
+    "created": "2023-09-23T13:16:22.989Z",
+    "updated": "2023-09-23T13:16:22.989Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "post": 3,
+    "name": "Henry",
+    "email": "henryukomah@gmail.com",
+    "body": "Yet, there are moments when the fog of fear, insecurity, or past failures cloud our brilliance. In such times, it becomes imperative to remember that light finds its true purpose in the dark.",
+    "created": "2023-09-25T20:11:20.971Z",
+    "updated": "2023-09-25T20:11:20.971Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 5,
+  "fields": {
+    "post": 3,
+    "name": "Henry",
+    "email": "henryukomah@gmail.com",
+    "body": "Similarly, within the depths of our own souls, exists a luminance waiting to break free, to illuminate not only our path but to also light up the journey for those around us.",
+    "created": "2023-09-25T20:25:35.552Z",
+    "updated": "2023-09-25T20:45:56.034Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 6,
+  "fields": {
+    "post": 3,
+    "name": "Mike",
+    "email": "mike@gmail.com",
+    "body": "This light—comprising our hopes, dreams, kindness, and resilience—remains undeterred by the shadows of doubt or the storms of adversity. To let it shine out is to embrace our true essence, to let our authentic self radiate and touch the world in myriad, beautiful ways.",
+    "created": "2023-09-25T20:35:58.987Z",
+    "updated": "2023-09-25T20:35:58.987Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 7,
+  "fields": {
+    "post": 3,
+    "name": "Trial",
+    "email": "henryukomah@gmail.com",
+    "body": "Your comment has been added.",
+    "created": "2023-09-25T20:37:55.675Z",
+    "updated": "2023-09-25T20:37:55.675Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 9,
+  "fields": {
+    "post": 1,
+    "name": "Mike",
+    "email": "mike@gmail.com",
+    "body": "There's a poetic beauty in realizing that every individual has the power to influence the course of the future. It's a collective symphony of hopes and aspirations, where each note, no matter how faint, contributes to the grand melody of what's to come. Every act of kindness, every pursuit of knowledge, and every endeavor to uplift others writes a line in the story of our shared future.",
+    "created": "2023-09-27T00:13:54.223Z",
+    "updated": "2023-09-27T00:13:54.223Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "ANIMAL",
+    "slug": "animal"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "Django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 2
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "localhost:8000",
+    "name": "localhost:8000"
+  }
+}
+]

@@ -1,0 +1,19 @@
+{% load static %}
+
+{% for post in latest_posts  %}
+<div class="recent-post-widget">
+    <div class="recent-post-widget-content">
+        
+            <div class="recent-post-widget-thumbnail">
+                <a href="{{ post.get_absolute_url }}"><img src="{{ post.image.url}}" alt="" width="150" height="150" style="padding-top: 8px;" /></a>
+            </div>
+            <div class="recent-post-widget-title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></div>
+            <div class="recent-post-widget-info">
+                <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="#">{{ post.published|date:"F j, Y" }}</a></div>
+                <div class="clear"></div>
+            </div>
+       
+    </div>
+    <div class="clear"></div>
+</div>
+{% endfor %}

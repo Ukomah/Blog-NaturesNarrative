@@ -1,0 +1,291 @@
+{% load static %}
+{% load blog_tags %}
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang="en-US"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ] -->
+<html lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+
+    <title>{% block title %} Green Nature {% endblock %}</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/5/simplex/bootstrap.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;' type='text/css' media='all' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans%3Aregular%2Citalic%2C700%2C700italic&amp;subset=greek%2Ccyrillic-ext%2Ccyrillic%2Clatin%2Clatin-ext%2Cvietnamese%2Cgreek-ext&amp;' type='text/css' media='all' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext&amp;' type='text/css' media='all' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Mystery+Quest%3Aregular&amp;subset=latin%2Clatin-ext&amp;' type='text/css' media='all' />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+ 
+
+
+    
+    <link rel='stylesheet' href="{% static 'blog/css/style.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'blog/css/master-custom.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'blog/css/style-responsive.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'blog/css/style-custom.css' %}" type='text/css' media='all' />
+
+    <link rel='stylesheet' href="{% static 'blog/plugins/superfish/css/superfish.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'blog/plugins/dl-menu/component.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'blog/plugins/font-awesome-new/css/font-awesome.min.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'blog/plugins/elegant-font/style.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'blog/plugins/fancybox/jquery.fancybox.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'blog/plugins/flexslider/flexslider.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'blog/plugins/masterslider/public/assets/css/masterslider.main.css' %}" type='text/css' media='all' />
+
+
+</head>
+
+<body data-rsssl=1 class="home page-template-default page page-id-5680 _masterslider _msp_version_3.2.7 woocommerce-no-js">
+    <div class="body-wrapper  float-menu" data-home="https://demo.goodlayers.com/greennature/">
+        <header class="greennature-header-wrapper header-style-5-wrapper greennature-header-with-top-bar">
+
+            <!-- top navigation -->
+            <div class="top-navigation-wrapper">
+                <div class="top-navigation-container container">
+                    
+                    <div class="top-navigation-right">
+                        <div class="top-social-wrapper">
+                            <div class="social-icon">
+                                <a href="https://www.linkedin.com/in/esther-onyinyechi-oji/" target="_blank">
+                                    <i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-flickr"></i></a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-linkedin"></i></a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-tumblr"></i></a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-twitter"></i></a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-vimeo"></i></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            
+
+            <div id="greennature-header-substitute"></div>
+            <div class="greennature-header-inner header-inner-header-style-5">
+                <div class="greennature-header-container container">
+                    <div class="greennature-header-inner-overlay"></div>
+                    <!-- logo -->
+                    <div class="greennature-logo">
+                        <div class="greennature-logo-inner">
+                            <a href="{% url 'blog:post_list' %}">
+                                <img src="{% static 'blog/images/pn.png' %}"  style="width: 330px;" alt="" /> 
+                            </a>
+                        </div>
+                        <div class="greennature-responsive-navigation dl-menuwrapper" id="greennature-responsive-navigation">
+                            <button class="dl-trigger">Open Menu</button>
+                            <ul id="menu-main-menu" class="dl-menu greennature-main-mobile-menu">
+                                <li class="menu-item menu-item-home page_item page-item-5680 current_page_item"><a href="{% url 'blog:post_list' %}" aria-current="page">Home</a></li>
+                                <li class="menu-item menu-item-has-children menu-item-15"><a href="{% url 'blog:about' %}">About</a>
+                                    <!-- <ul class="dl-submenu">
+                                        <li class="menu-item"><a href="#">Act Now</a></li>
+                                        <li class="menu-item"><a href="#">About Us 1</a></li>
+                                        <li class="menu-item"><a href="#">About Us 2</a></li>
+                                        <li class="menu-item"><a href="#">Service</a></li>
+                                        <li class="menu-item"><a href="#">Personnel</a></li>
+                                        <li class="menu-item"><a href="#">Q&#038;A</a></li>
+                                        <li class="menu-item"><a href="#">Contact Page 1</a></li>
+                                        <li class="menu-item"><a href="#">Contact Page 2</a></li>
+                                        <li class="menu-item menu-item-12"><a href="#">404 Page</a></li>
+                                        <li class="menu-item"><a href="#">Testimonial</a></li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Gallery</a>
+                                            <ul class="dl-submenu">
+                                                <li class="menu-item"><a href="#">Gallery 2 Columns Without Caption</a></li>
+                                                <li class="menu-item"><a href="#">Gallery 2 Columns With Caption</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="{% url 'blog:contact' %}">Contact</a>
+                                    <!-- <ul class="dl-submenu">
+                                        <li class="menu-item menu-item-has-children"><a href="#">Portfolio Classic</a>
+                                            <ul class="dl-submenu">
+                                                <li class="menu-item"><a href="#">Portfolio Grid 1 Column (Both Sidebar)</a></li>
+                                                <li class="menu-item"><a href="#">Portfolio Grid 2 Columns (Right Sidebar)</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Portfolio With Filter</a>
+                                            <ul class="dl-submenu">
+                                                <li class="menu-item"><a href="#">Portfolio Grid 2 Cols With Filter</a></li>
+                                                <li class="menu-item"><a href="#">Single Portfolio</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                                <li class="menu-item current-menu-item menu-item-has-children"><a href="#">Upwork</a>
+                                    <!-- <ul class="dl-submenu">
+                                    	<li class="menu-item"><a href="#">Blog Full</a></li>
+
+                                        <li ss="menu-item menu-item-has-children menu-item-"><a href="#">Blog Column</a>
+                                            <ul class="dl-submenu">
+                                                <li class="menu-item"><a href="#">Blog 1 Column (Right Sidebar)</a></li>
+                                                <li class="menu-item"><a href="#">Blog 2 Columns (Right Sidebar)</a></li>
+                                                <li class="menu-item"><a href="#">Blog 3 Columns</a></li>
+                                                <li class="menu-item"><a href="#">Blog 4 Columns</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children menu-item-7"><a href="#">Blog Masonry</a>
+                                            <ul class="dl-submenu">
+                                                <li class="menu-item"><a href="#">Blog 2 Columns &#8211; Masonry (Right Sidebar)</a></li>
+                                                <li class="menu-item"><a href="#">Blog 3 Columns – Masonry</a></li>
+                                                <li class="menu-item"><a href="#">Blog 4 Columns – Masonry</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul> -->
+                                </li>
+       
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- navigation -->
+                    <div class="greennature-navigation-wrapper">
+                        <nav class="greennature-navigation" id="greennature-main-navigation">
+                            <ul id="menu-main-menu-1" class="sf-menu greennature-main-menu">
+                                <li class="menu-item menu-item-home greennature-normal-menu"><a href="{% url 'blog:post_list' %}" ><i class="fa fa-home"></i>Home</a></li>
+                                <li class="menu-item menu-item-has-children greennature-normal-menu"><a href="{% url 'blog:about' %}" class="sf-with-ul-pre"><i class="fa fa-file-text-o"></i>About</a>
+                                    <!-- <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Act Now</a></li>
+                                        <li class="menu-item"><a href="#">About Us 1</a></li>
+                                        <li class="menu-item"><a href="#">About Us 2</a></li>
+                                        <li class="menu-item"><a href="#">Service</a></li>
+                                        <li class="menu-item"><a href="#">Personnel</a></li>
+                                        <li class="menu-item"><a href="#">Q&#038;A</a></li>
+                                        <li class="menu-item"><a href="#">Contact Page 1</a></li>
+                                        <li class="menu-item"><a href="#">404 Page</a></li>
+                                        <li class="menu-item"><a href="#">Testimonial</a></li>
+                                        <li class="menu-item menu-item-has-children"><a href="#" class="sf-with-ul-pre">Gallery</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="#">Gallery 2 Columns Without Caption</a></li>
+                                                <li class="menu-item"><a href="#">Gallery 2 Columns With Caption</a></li>
+                                                <li class="menu-item"><a href="#">Gallery 3 Columns Without Caption</a></li>
+                                                <li class="menu-item"><a href="#">Gallery 3 Columns With Caption</a></li>
+                                                <li class="menu-item"><a href="#">Gallery 4 Columns Without Caption</a></li>
+                                                <li class="menu-item"><a href="#">Gallery 4 Columns With Caption</a></li>
+                                                <li class="menu-item"><a href="#">Gallery 5 Columns Without Caption</a></li>
+                                                <li class="menu-item"><a href="#">Gallery 5 Columns With Caption</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                                <li class="menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-mega-menu"><a href="{% url 'blog:contact' %}" class="sf-with-ul-pre"><i class="fa fa-envelope"></i>contact</a>
+                                    <!-- <div class="sf-mega">
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-has-children" data-column="four columns" data-size="1/3"><a href="portfolio-grid-3-columns.html" class="sf-with-ul-pre">Portfolio Classic</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 1 Column (Both Sidebar)</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 2 Columns (Right Sidebar)</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 3 Columns</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 4 Columns</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 2 Columns, No Space</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 3 Columns, No Space</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 4 Columns, No Space</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children" data-column="four columns" data-size="1/3"><a href="portfolio-modern-3-columns-with-filter.html" class="sf-with-ul-pre">Portfolio With Filter</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 1 Col With Filter</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 2 Cols With Filter</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 3 Cols With Filter</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Grid 4 Cols With Filter</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Modern 3 Cols With Filter</a></li>
+                                                    <li class="menu-item"><a href="#">Portfolio Modern 4 Cols With Filter</a></li>
+                                                    <li class="menu-item"><a href="#">Single Portfolio</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div> -->
+                                </li>
+                                <!-- <li class="menu-item  current-menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-normal-menu"><a href="blog-full-with-right-sidebar.html" class="sf-with-ul-pre">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Blog Full</a></li>
+                                        <li class="menu-item menu-item-has-children menu-item-"><a href="#" class="sf-with-ul-pre">Blog Column</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="#">Blog 1 Column (Right Sidebar)</a></li>
+                                                <li class="menu-item"><a href="#">Blog 2 Columns (Right Sidebar)</a></li>
+                                                <li class="menu-item"><a href="#">Blog 3 Columns</a></li>
+                                                <li class="menu-item"><a href="#">Blog 4 Columns</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children menu-item-7"><a href="#" class="sf-with-ul-pre">Blog Masonry</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="#">Blog 2 Columns &#8211; Masonry (Right Sidebar)</a></li>
+                                                <li class="menu-item"><a href="#">Blog 3 Columns – Masonry</a></li>
+                                                <li class="menu-item"><a href="#">Blog 4 Columns – Masonry</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                            </ul>
+                            <a class="greennature-donate-button greennature-lb-payment"><span class="greennature-button-overlay"></span><span class="greennature-button-donate-text">Upwork</span></a>
+
+                        </nav>
+                        <div class="greennature-navigation-gimmick" id="greennature-navigation-gimmick"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </header>
+        <!-- is search -->
+
+        {% block content %}
+            
+        {% endblock content %}
+                        
+
+        {% include 'blog/footer.html' %}
+
+        
+    </div>
+    <!-- body-wrapper -->
+
+    <script type='text/javascript' src="{% static 'blog/js/jquery/jquery.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/js/jquery/jquery-migrate.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/superfish/js/superfish.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/js/hoverIntent.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/dl-menu/modernizr.custom.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/dl-menu/jquery.dlmenu.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/jquery.easing.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/fancybox/jquery.fancybox.pack.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/fancybox/helpers/jquery.fancybox-media.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/fancybox/helpers/jquery.fancybox-thumbs.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/flexslider/jquery.flexslider.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/jquery.isotope.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/js/plugins.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/jquery.transit.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'blog/plugins/gdlr-portfolio/gdlr-portfolio-script.js' %}"></script>
+
+
+
+
+</body>
+</html>

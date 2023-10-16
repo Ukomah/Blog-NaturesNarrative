@@ -1,0 +1,176 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% load blog_tags %}
+
+
+{% block title %}
+    {{ post.title }}
+{% endblock title %}
+
+
+{% block content %}
+
+<div class="content-wrapper">
+    <div class="greennature-content">
+
+        <!-- Above Sidebar Section-->
+        <!-- google map -->
+        <div class="above-sidebar-wrapper">
+            <section id="content-section-1">
+                <div class="greennature-full-size-wrapper gdlr-show-all no-skin" style="padding-top: 7px; padding-bottom: 0px;  background-color: #ffffff; ">
+                    <div class="greennature-item greennature-content-item" style="margin-bottom: 0px;">
+                        <iframe style="width:100%; height:580px; border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7177544407755!2d-1.3479851228831619!3d53.43775466787972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487976926d53ad67%3A0xb7c21ce80c330a50!2s35%20Milton%20Rd%2C%20Rotherham%20S65%201QT!5e0!3m2!1sen!2suk!4v1696812542287!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"; width="600" height="450" ></iframe>
+                        <div style="position: absolute;width: 80%;bottom: 20px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </section>
+        </div>
+
+
+    <!-- Sidebar With Content Section-->
+        <div class="with-sidebar-wrapper">
+            <div class="with-sidebar-container container">
+                
+                <div class="with-sidebar-left eight columns">
+                    <div class="with-sidebar-content twelve columns">
+                        <section id="content-section-2">
+                            <div class="section-container container">
+                                <div class="greennature-item greennature-content-item" style="margin-bottom: 60px;"><span class="clear"></span><span class="greennature-space" style="margin-top: -22px; display: block;"></span>
+                                    
+                                    <p> <span class="clear"></span><span class="greennature-space" style="margin-top: 25px; display: block;"></span>
+                                        <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+                                            
+
+                                                <div class="">
+                                                    {% if sent %}
+                                                        <h3>E-mail successfully sent</h3>
+                                                        <p style="margin-bottom: 100px;">
+                                                             We will get back to you as soon as possible.<hr>
+                                                        </p>
+                                                        <div class="clear"></div>
+                                                        
+
+                                                    {% else %}
+                                                        
+                                                        <h5 class="greennature-heading-shortcode " style="font-weight: bold;">Please fulfil the form below. </h5>
+
+                                                        <form method="post">
+                                                            {% csrf_token %}
+                                                            
+                                                            <div class="quform-element">
+                                                                <p>
+                                                                    <span class="wpcf7-form-control-wrap your-name">
+                                                                        Name: {{ form.name }} <!-- Adjusted to use Django form field -->
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="quform-element">
+                                                                <p>
+                                                                    <span class="wpcf7-form-control-wrap your-email">
+                                                                        Email: {{ form.email }} <!-- Adjusted to use Django form field -->
+                                                                    </span>
+                                                                    
+                                                                </p>
+                                                            </div>
+                                                            <div class="quform-element">
+                                                                <p>
+                                                                    <span class="wpcf7-form-control-wrap your-message">
+                                                                        Comment: {{ form.body }} <!-- Adjusted to use Django form field -->
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="quform-submit">
+                                                                
+                                                                <div class="quform-submit-inner">
+                                                                    <button type="submit" class="submit-button" value="Send e-mail"><span>Send</span></button>
+                                                                </div>
+                                                                <!-- <div class="quform-loading-wrap"><span class="quform-loading"></span></div> -->
+                                                            </div>
+                                                        </form>
+
+                                                    {% endif %}
+                                                </div>
+                                                
+                                            <!-- </form> -->
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+
+
+               
+                <div class="clear"></div>
+            </div>
+        </div>
+
+   
+    <!-- <div class="below-sidebar-wrapper">
+        <section id="content-section-3">
+            <div class="greennature-parallax-wrapper greennature-background-image gdlr-show-all no-skin" id="greennature-parallax-wrapper-1" data-bgspeed="0.2" style="background-image: url('upload/service-bg.jpg'); padding-top: 100px; padding-bottom: 50px; ">
+                <div class="container">
+                    <div class="four columns">
+                        <div class="greennature-box-with-icon-ux greennature-ux">
+                            <div class="greennature-item greennature-box-with-icon-item pos-top type-circle">
+                                <div class="box-with-circle-icon" style="background-color: #5dc269"><i class="fa fa-envelope" style="color:#ffffff;"></i>
+                                    <br>
+                                </div>
+                                <h4 class="box-with-icon-title">Contact By Email</h4>
+                                <div class="clear"></div>
+                                <div class="box-with-icon-caption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four columns">
+                        <div class="greennature-box-with-icon-ux greennature-ux">
+                            <div class="greennature-item greennature-box-with-icon-item pos-top type-circle">
+                                <div class="box-with-circle-icon" style="background-color: #5dc269"><i class="fa fa-phone" style="color:#ffffff;"></i>
+                                    <br>
+                                </div>
+                                <h4 class="box-with-icon-title">Contact By Phone</h4>
+                                <div class="clear"></div>
+                                <div class="box-with-icon-caption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four columns">
+                        <div class="greennature-box-with-icon-ux greennature-ux">
+                            <div class="greennature-item greennature-box-with-icon-item pos-top type-circle">
+                                <div class="box-with-circle-icon" style="background-color: #5dc269"><i class="fa fa-home" style="color:#ffffff;"></i>
+                                    <br>
+                                </div>
+                                <h4 class="box-with-icon-title">Come To See Us</h4>
+                                <div class="clear"></div>
+                                <div class="box-with-icon-caption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </div> -->
+
+    </div>
+    <!-- greennature-content -->
+    <div class="clear"></div>
+</div>
+
+
+                                
+{% endblock content %}

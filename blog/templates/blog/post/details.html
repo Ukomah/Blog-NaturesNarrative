@@ -1,0 +1,272 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% load blog_tags %}
+
+
+{% block title %}
+    {{ post.title }}
+{% endblock title %}
+
+
+{% block content %}
+<!-- Banner -->
+<div class="greennature-page-title-wrapper header-style-5-title-wrapper">
+    <div class="greennature-page-title-overlay"></div>
+    <div class="greennature-page-title-container container">
+        <h1 class="greennature-page-title">Nature's Narrative</h1>
+        <span class="greennature-page-caption">Relax, as we take a tour round the world!...</span>
+    </div>
+</div>
+
+        <!-- is search -->
+<div class="content-wrapper">
+    <div class="greennature-content">
+        
+        <!-- Sidebar With Content Section-->
+        
+        <div class="with-sidebar-wrapper">
+            <div class="with-sidebar-container container">
+
+
+                <!--Content Section-->
+                <div class="with-sidebar-left eight columns">
+                    <div class="with-sidebar-content twelve columns">
+                        <section id="content-section-1">
+                            <div class="section-container container">
+                                <div class="blog-item-wrapper">
+                                    <div class="blog-item-holder">
+                                        <div class="greennature-isotope" data-type="blog" data-layout="fitRows">
+                                            <div class="clear"></div>
+
+                                            <div class="twelve columns">
+                                                <div class="greennature-item greennature-blog-grid greennature-skin-box">
+                                                    <div class="greennature-ux greennature-blog-grid-ux">
+                                                        <article id="post-852" class="post-852 post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row tag-blog tag-life-style">
+                                                            <div class="greennature-standard-style">
+                                                                <div class="greennature-blog-thumbnail">
+                                                                    <div id="carouselExampleIndicators{{ forloop.counter }}" class="carousel slide" data-bs-ride="carousel">
+                                                                        <div class="carousel-inner">
+                                                                            {% if post.image %}
+                                                                                <div class="carousel-item active">
+                                                                                    <img class="d-block w-100  custom-image-size rounded-1" src="{{ post.image.url }}" alt="{{ post.title }}">
+                                                                                </div>
+                                                                            {% endif %}
+                                                                            {% for postimage in post.postimage_set.all %}
+                                                                                <div class="carousel-item">
+                                                                                    <img class="d-block w-100 custom-image-size rounded-1" src="{{ postimage.image.url }}" alt="{{ post.title }}">
+                                                                                </div>
+                                                                            {% endfor %}
+                                                                        </div>
+                                                                        {% if post.image and post.postimage_set.all.count > 0 %}
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators{{ forloop.counter }}"  data-bs-slide="prev">
+                                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                                <span class="visually-hidden">Previous</span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators{{ forloop.counter }}"  data-bs-slide="next">
+                                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                                <span class="visually-hidden">Next</span>
+                                                                            </button>
+                                                                        {% endif %}
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="greennature-blog-grid-content">
+                                                                    <!-- blog header -->
+                                                                    <header class="post-header">
+                                                                        <h3 class="greennature-blog-title"><a href="#">{{ post.title }}</a></h3>
+
+                                                                        <div class="greennature-blog-info">
+                                                                            <div class="blog-info blog-date greennature-skin-info"><i class="fa fa-clock-o"></i><a href="#">{{ post.published }} by {{ post.author }}</a></div>
+                                                                            <div class="blog-info blog-comment greennature-skin-info">
+                                                                                <i class="fa fa-comment-o"></i>
+                                                                                <a href="#">
+                                                                                    {% with comments.count as total_comments %}
+                                                                                            {{ total_comments }} <span class="greennature-tail">Comment</span>{{ total_comments|pluralize}}
+                                                                                    {% endwith %}
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="clear"></div>
+                                                                        </div>
+                                                                        <div class="clear"></div>
+                                                                    </header>
+
+                                                                    <!-- blog content -->
+
+                                                                    <div class="greennature-blog-content">{{ post.body|markdown|linebreaks }}
+                                                                        <p style="font-weight: bold;"> 
+                                                                            <a href="{% url 'blog:post_share' post.id %}">
+                                                                            Share this post
+                                                                            </a>
+                                                                        </p>
+
+                                    
+                                                                    
+
+                                                                        {% with comments.count as total_comments %}
+                                                                            <h3 class="greennature-widget-title">
+                                                                                {{ total_comments }} comment{{ total_comments|pluralize}}
+                                                                            </h3>
+                                                                        {% endwith %}
+                                                                        
+                                                                        {% for comment in comments %}
+                                                                            <div class="">
+                                                                                <p>
+                                                                                    {{ comment.body }} 
+                                                                                    <span style="float: right; font-size: 9px;">
+                                                                                        {{ comment.name }} | {{ comment.created }}
+                                                                                    </span>
+                                                                                </p>
+                                                                                    
+
+                                                                            </div>
+                                                                        {% empty %}
+                                                                            <p>There are no comments. </p>
+                                                                        {% endfor %}
+
+                                                                    </div>
+
+                                                                    {% if similar_posts %}
+                                                                            <div style="margin-top: 40px;">
+                                                                                <p> Check out similar posts: 
+                                                                                    <span>
+                                                                                        {% for post in similar_posts %}
+                                                                                            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a> |
+                                                                                        {% endfor %}
+                                                                                    </span>
+                                                                                </p>
+                                                                                
+                                                                            </div>
+                                                                    {% endif %}
+                                                                
+                                                                        
+                                                                    
+                                                                    
+                                                                </div>                                             
+                                                            </div>
+                                                        </article>
+
+                                                        <div class="eight columns" style="margin-bottom: 20px;">
+                                                            {% include "blog/post/includes/comment_form.html" %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="clear"></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </section>
+
+                        
+                    </div>
+                
+                    
+                </div>
+
+                <!-- Side bar -->
+                <div class="greennature-sidebar greennature-right-sidebar four columns">
+                    <div class="greennature-item-start-content sidebar-right-item">
+                        <div id="search-3" class="widget widget_search greennature-item greennature-widget">
+                            <div class="gdl-search-form">
+                                <form method="get" id="searchform" action="{% url 'blog:post_search' %}">
+                                    
+                                    <div class="search-text" id="search-text">
+                                        <input type="text" name="query" id="s" autocomplete="off" data-default="Type keywords..." />
+                                    </div>
+                                    <input type="submit" id="searchsubmit" value="" />
+                                    <div class="clear"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="text-2" class="widget widget_text greennature-item greennature-widget">
+                           
+                            <div class="clear"></div>
+                            <div class="textwidget"> <blockquote>"Nature is not a place to visit. It is home." - Gary Snyder</blockquote> 
+                            </div>
+                        </div>
+                        <div id="gdlr-recent-portfolio-widget-2" class="widget widget_gdlr-recent-portfolio-widget greennature-item greennature-widget">
+                            <h3 class="greennature-widget-title">Recent Posts</h3>
+                            <div class="clear"></div>
+                            <div class="greennature-recent-port-widget">
+                            
+                                    <div class="recent-post-widget-content">
+
+                                        {% show_latest_posts %}
+
+                                    </div>
+                                
+                                    <div class="clear"></div>
+                                
+                            </div>
+                        </div>
+                        <div id="recent-comments-3" class="widget widget_recent_comments greennature-item greennature-widget">
+                            <h3 class="greennature-widget-title">Most commented posts</h3>
+                            <div class="clear"></div>
+                            {% get_most_commented_posts as most_commented_posts %}
+                            <ul id="recentcomments">
+                                {% for post in most_commented_posts  %}
+                                    <li class="recentcomments"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
+                            <h3 class="greennature-widget-title">Tag Cloud</h3>
+                            <div class="clear"></div>
+
+                            <div class="tagcloud">
+
+                                
+                                {% for tag in tags %}
+                                    <a href="{% url 'blog:post_list_by_tag' tag.slug %}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;">
+                                        {{ tag.name }} ({{ tag.num_posts }})
+                                    </a>
+                                {% endfor %}
+
+                                
+                                <!-- <a href="#" class="tag-cloud-link tag-link-12 tag-link-position-2" style="font-size: 8pt;" aria-label="Aside (1 item)">Aside</a>
+                                <a href="#" class="tag-cloud-link tag-link-13 tag-link-position-3" style="font-size: 11.230769230769pt;" aria-label="Audio (2 items)">Audio</a>
+                                <a href="#" class="tag-cloud-link tag-link-14 tag-link-position-4" style="font-size: 20.564102564103pt;" aria-label="Blog (9 items)">Blog</a>
+                                <a href="#" class="tag-cloud-link tag-link-15 tag-link-position-5" style="font-size: 15.179487179487pt;" aria-label="Business (4 items)">Business</a>
+                                <a href="#" class="tag-cloud-link tag-link-17 tag-link-position-6" style="font-size: 13.384615384615pt;" aria-label="identity (3 items)">identity</a>
+                                <a href="#" class="tag-cloud-link tag-link-74 tag-link-position-7" style="font-size: 8pt;" aria-label="Life Stlyle (1 item)">Life Stlyle</a>
+                                <a href="#" class="tag-cloud-link tag-link-18 tag-link-position-8" style="font-size: 22pt;" aria-label="Life Style (11 items)">Life Style</a>
+                                <a href="#" class="tag-cloud-link tag-link-19 tag-link-position-9" style="font-size: 11.230769230769pt;" aria-label="Link (2 items)">Link</a>
+                                <a href="#" class="tag-cloud-link tag-link-20 tag-link-position-10" style="font-size: 15.179487179487pt;" aria-label="News (4 items)">News</a>
+                                <a href="#" class="tag-cloud-link tag-link-21 tag-link-position-11" style="font-size: 15.179487179487pt;" aria-label="Post format (4 items)">Post format</a>
+                                <a href="#" class="tag-cloud-link tag-link-22 tag-link-position-12" style="font-size: 8pt;" aria-label="Quote (1 item)">Quote</a>
+                                <a href="#" class="tag-cloud-link tag-link-23 tag-link-position-13" style="font-size: 8pt;" aria-label="Safari (1 item)">Safari</a>
+                                <a href="#" class="tag-cloud-link tag-link-24 tag-link-position-14" style="font-size: 8pt;" aria-label="Travel (1 item)">Travel</a>
+                                <a href="#" class="tag-cloud-link tag-link-25 tag-link-position-15" style="font-size: 8pt;" aria-label="Video (1 item)">Video</a> -->
+                            </div>
+                        </div>
+                        <!-- Using this div for RSS feed -->
+                        <div id="tag_cloud-2" class="widget widget_tag_cloud greennature-item greennature-widget">
+                        
+                            <div class="clear"></div>
+
+                            <div class="tagcloud">
+                                <p>
+                                    <a href="{% url 'blog:post_feed' %}" class="tag-cloud-link tag-link-11 tag-link-position-1" style="font-size: 8pt;">
+                                    Subscribe to my RSS feed
+                                    </a>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+      <!-- Below Sidebar Section-->
+
+    </div>
+    <!-- greennature-content -->
+    <div class="clear"></div>
+</div>
+<!-- content wrapper -->                             
+{% endblock content %}

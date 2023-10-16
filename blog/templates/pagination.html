@@ -1,0 +1,23 @@
+<div class="greennature-pagination">
+    <span class="page-numbers current"> 
+        
+        {% if page.has_previous %}
+            <a class="page-numbers" href="?page={{ page.previous_page_number }}">Previous</a>
+        {% endif %}
+
+        <span class="page-number current">
+            Page {{ page.number }} of {{ page.paginator.num_pages }}.
+        </span>
+
+        {% if page.has_next %}
+            <a class="next page-numbers" href="?page={{ page.next_page_number }}">Next</a>
+        {% endif %}
+            
+    </span>
+</div>
+
+
+<!-- <div class="greennature-pagination"><span aria-current='page' class='page-numbers current'>1</span>
+                            <a class='page-numbers' href='#'>2</a>
+                            <a class="next page-numbers" href="#">Next &rsaquo;</a>
+</div> -->

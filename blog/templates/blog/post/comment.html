@@ -1,0 +1,47 @@
+{% extends "blog/base.html" %}
+
+{% block title %}
+    Comment Added
+{% endblock %}
+
+{% block content %}
+   
+    <div class="with-sidebar-wrapper">
+    <div class="with-sidebar-container container">
+        <div class="with-sidebar-left eight columns">
+            <div class="with-sidebar-content twelve columns">
+                <section id="content-section-2">
+                    <div class="section-container container">
+                        <div class="greennature-item greennature-content-item" style="margin-bottom: 60px;"><span class="clear"></span><span class="greennature-space" style="margin-top: -22px; display: block;"></span>
+                            <!-- <h5 class="greennature-heading-shortcode " style="font-weight: bold;">Please fulfil the form below. </h5> -->
+                            <p> <span class="clear"></span><span class="greennature-space" style="margin-top: 25px; display: block;"></span>
+                                <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+                                    <!-- <form class="quform" action="plugins/quform/process.php" method="post" enctype="multipart/form-data" onclick=""> -->
+
+                                        <div class="quform-elements">
+                                            
+                                            {% if comment %}
+                                            
+                                                <h3 class="greennature-widget-title">
+                                                    Your comment has been added.
+                                                </h3>
+                                                <p><a href="{{ post.get_absolute_url }}">Back to the post</a></p>
+                                            {% else %}
+                                                {% include "blog/post/includes/comment_form.html" %}
+                                            {% endif %}  
+                                        </div>
+                                        
+                                    <!-- </form> -->
+                                </div>
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

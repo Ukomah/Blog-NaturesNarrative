@@ -1,0 +1,65 @@
+{% load static %}
+{% load blog_tags %}
+
+<footer class="footer-wrapper">
+    <div class="footer-container container">
+        <div class="footer-column three columns" id="footer-widget-1">
+            <div id="text-5" class="widget widget_text greennature-item greennature-widget">
+                <div class="textwidget">
+                    <p><img src="{% static 'blog/images/pn.png' %}" style="width: 230px;" alt="" /></p>
+                    <p>Each breeze carries a story, every rustling leaf whispers a secret, and through the rhythmic dance of the seasons, we are reminded of the ageless narratives that bind us all</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-column three columns" id="footer-widget-2">
+            <div id="text-9" class="widget widget_text greennature-item greennature-widget">
+                <h3 class="greennature-widget-title">Contact Info</h3>
+                <div class="clear"></div>
+                <div class="textwidget"><span class="clear"></span><span class="greennature-space" style="margin-top: -6px; display: block;"></span> Address: Gregory University, Nigeria.
+  
+                    <span class="clear"></span><span class="greennature-space" style="margin-top: 10px; display: block;"></span>
+  
+                    <i class="greennature-icon fa fa-phone" style="vertical-align: middle; color: #fff; font-size: 16px; "></i>  +2348165338710  
+  
+                    <span class="clear"></span><span class="greennature-space" style="margin-top: 10px; display: block;"></span>
+  
+                    <i class="greennature-icon fa fa-mobile" style="vertical-align: middle; color: #fff; font-size: 20px; "></i>  +2348165338710
+  
+                    <span class="clear"></span><span class="greennature-space" style="margin-top: 10px; display: block;"></span>
+  
+                    <i class="greennature-icon fa fa-envelope-o" style="vertical-align: middle; color: #fff; font-size: 16px; "></i> estherwrites01@gmail.com</div>
+            </div>
+        </div>
+        <div class="footer-column three columns" id="footer-widget-3">
+            <div id="gdlr-recent-post-widget-5" class="widget widget_gdlr-recent-post-widget greennature-item greennature-widget">
+                <h3 class="greennature-widget-title">Recent Posts</h3>
+                <div class="clear"></div>
+                {% show_latest_posts 2 %}
+               
+            </div>
+        </div>
+        <div class="footer-column three columns" id="footer-widget-4">
+            <div id="gdlr-recent-portfolio2-widget-6" class="widget widget_gdlr-recent-portfolio2-widget greennature-item greennature-widget">
+                <h3 class="greennature-widget-title">RSS Feeds</h3>
+                <div class="clear"></div>
+                <div class="greennature-recent-port2-widget">
+                    <p>
+                        <a href="{% url 'blog:post_feed' %}" class="btn greennature-button">Subscribe to my RSS feed</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+  
+    <div class="copyright-wrapper">
+        <div class="copyright-container container">
+            <div class="copyright-left">
+                <a href="http://facebook.com/goodlayers"><i class="greennature-icon fa fa-facebook" style="vertical-align: middle;color: #bbbbbb;font-size: 20px"></i></a> <a href="http://twitter.com/goodlayers"><i class="greennature-icon fa fa-twitter" style="vertical-align: middle;color: #bbbbbb;font-size: 20px"></i></a> <a href="#"><i class="greennature-icon fa fa-dribbble" style="vertical-align: middle;color: #bbbbbb;font-size: 20px"></i></a> <a href="#"><i class="greennature-icon fa fa-pinterest" style="vertical-align: middle;color: #bbbbbb;font-size: 20px"></i></a> <a href="#"><i class="greennature-icon fa fa-google-plus" style="vertical-align: middle;color: #bbbbbb;font-size: 20px"></i></a> <a href="#"><i class="greennature-icon fa fa-instagram" style="vertical-align: middle;color: #bbbbbb;font-size: 20px"></i></a>
+            </div>
+            <div class="copyright-right">
+                Copyright 2023, All Right Reserved </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+  </footer>
