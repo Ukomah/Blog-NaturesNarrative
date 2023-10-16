@@ -13,6 +13,8 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
+import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -156,3 +158,5 @@ EMAIL_USE_TLS = True
 
 
 SITE_ID = 1
+
+django_heroku.settings(locals())
