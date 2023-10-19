@@ -105,16 +105,8 @@ WSGI_APPLICATION = 'blogsite.wsgi.application'
 
 
 DATABASES = {
-    'default': {
-    'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    'NAME': 'dedn04v5jpb1ng',
-    'USER': 'eexzdlzriatoac',
-    'PASSWORD': os.getenv('DB_PASSWORD'),
-    'HOST':'ec2-52-215-68-14.eu-west-1.compute.amazonaws.com',
-    'PORT': '5432'
-    }
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
