@@ -110,7 +110,7 @@ DATABASES = {
     'NAME': 'dedn04v5jpb1ng',
     'USER': 'eexzdlzriatoac',
     'PASSWORD': os.getenv('DB_PASSWORD'),
-    'HOST':'ostec2-52-215-68-14.eu-west-1.compute.amazonaws.com',
+    'HOST':'ec2-52-215-68-14.eu-west-1.compute.amazonaws.com',
     'PORT': '5432'
     }
 }
