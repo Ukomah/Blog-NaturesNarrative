@@ -30,9 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['natures-narrative.herokuapp.com']
 
-django_heroku.settings(locals())
 
 
 # Application definition
@@ -53,14 +51,24 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    
+    
 ]
+
+
+ALLOWED_HOSTS = ['natures-narrative.herokuapp.com']
+
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
+
 
 ROOT_URLCONF = 'blogsite.urls'
 
