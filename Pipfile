@@ -13,6 +13,7 @@ python-dotenv = "*"
 gunicorn = "*"
 django-heroku = "*"
 whitenoise = "*"
+django-cloudinary-storage = "*"
 
 [dev-packages]
 
